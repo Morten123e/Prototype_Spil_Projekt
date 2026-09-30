@@ -472,6 +472,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3002039583994744633, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002039583994744633, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.43529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002039583994744633, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002039583994744633, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281560871
+      objectReference: {fileID: 0}
     - target: {fileID: 3218613955273755320, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -552,10 +568,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3248907258250948774, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.19937083
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248907258250948774, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248907258250948774, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.14983979
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248907258250948774, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281560870
+      objectReference: {fileID: 0}
     - target: {fileID: 4684341104690089471, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1090179334}
+    - target: {fileID: 6564195180328622268, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564195180328622268, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.43529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564195180328622268, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.15294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564195180328622268, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281560871
+      objectReference: {fileID: 0}
     - target: {fileID: 6755745450888550096, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_Name
       value: Canvas

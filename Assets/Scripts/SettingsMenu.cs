@@ -12,6 +12,7 @@ public class SettingsMenu : MonoBehaviour
     {
         // Panelet skal være lukket, når spillet starter.
         settingsPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // public + void + ingen parametre = kan vælges i knappens On Click ()-dropdown.
@@ -19,10 +20,12 @@ public class SettingsMenu : MonoBehaviour
     {
         // Tænder panelet og dermed alle dets children (slider, luk-knap osv.)
         settingsPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 }
