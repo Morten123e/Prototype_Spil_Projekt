@@ -262,14 +262,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 182606464783365323, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 516182154}
-    - target: {fileID: 182606464783365323, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettings
-      objectReference: {fileID: 0}
     - target: {fileID: 1323865263735303884, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_SizeDelta.x
       value: 9.047
@@ -570,14 +562,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 8181678244942581966, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 516182154}
-    - target: {fileID: 8181678244942581966, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenSettings
-      objectReference: {fileID: 0}
     - target: {fileID: 8325224051329146008, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -605,10 +589,7 @@ PrefabInstance:
     - {fileID: 9018266496835865319, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
     - {fileID: 2521482080142761389, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6755745450888550096, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 516182154}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
 --- !u!1 &289926429
 GameObject:
@@ -1035,24 +1016,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &516182148 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6755745450888550096, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-  m_PrefabInstance: {fileID: 230077612}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &516182154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516182148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7046fe5ee2b82a84c824d9f2af39174d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingsMenu
-  settingsPanel: {fileID: 2038154924}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

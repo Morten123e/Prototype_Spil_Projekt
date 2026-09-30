@@ -1,6 +1,6 @@
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 
 public class Draggable : MonoBehaviour
 {
@@ -21,11 +21,36 @@ public class Draggable : MonoBehaviour
         levelUI = FindFirstObjectByType<LevelUI>();
     }
 
+    // Touch på mobil. Findes der ingen touchskærm (fx i Game view på en PC), bruges musen i stedet.
+    private ButtonControl GetPressButton()
+    {
+        if (Touchscreen.current != null)
+        {
+            return Touchscreen.current.primaryTouch.press;
+        }
+
+        if (Mouse.current != null)
+        {
+            return Mouse.current.leftButton;
+        }
+
+        return null;
+    }
+
+    private Vector2 GetScreenPosition()
+    {
+        if (Touchscreen.current != null)
+        {
+            return Touchscreen.current.primaryTouch.position.ReadValue();
+        }
+
+        return Mouse.current.position.ReadValue();
+    }
+
     private Vector3 GetTouchWorldPosition()
     {
         // Finder touch-positionen på skærmen
-        Vector2 touchPosition =
-            Touchscreen.current.primaryTouch.position.ReadValue();
+        Vector2 touchPosition = GetScreenPosition();
 
         // Konverterer screen position til world position
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(
@@ -41,8 +66,16 @@ public class Draggable : MonoBehaviour
 
     private void Update()
     {
+        ButtonControl press = GetPressButton();
+
+        // Hverken touchskærm eller mus fundet
+        if (press == null)
+        {
+            return;
+        }
+
         // Spilleren trykker på skærmen
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+        if (press.wasPressedThisFrame)
         {
             Vector3 touchPosition = GetTouchWorldPosition();
 
@@ -58,15 +91,13 @@ public class Draggable : MonoBehaviour
         }
 
         // Spilleren trækker fingeren
-        if (isDragging &&
-            Touchscreen.current.primaryTouch.press.isPressed)
+        if (isDragging && press.isPressed)
         {
             Drag();
         }
 
         // Spilleren løfter fingeren
-        if (isDragging &&
-            Touchscreen.current.primaryTouch.press.wasReleasedThisFrame)
+        if (isDragging && press.wasReleasedThisFrame)
         {
             StopDragging();
         }
