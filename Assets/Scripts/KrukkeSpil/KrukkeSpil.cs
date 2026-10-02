@@ -8,7 +8,7 @@ public class KrukkeSpil : MonoBehaviour
     [SerializeField] private GameObject levelCompleteMenu;
     [SerializeField] private float snapDistance = 0.6f;    
 
-    private int draggedIndex = -1; // Nummeret på det skår, vi trækker i. -1 = vi trækker ikke i noget
+    private int draggedIndex = -1; // Nummeret på det skår, vi trækker i. -1 = trækker ikke i noget
     private Vector3 grabOffset;    // Hvor på skåret man tog fat, så det ikke hopper under fingeren
     private int placedCount = 0;   // Hvor mange skår der sidder fast
 

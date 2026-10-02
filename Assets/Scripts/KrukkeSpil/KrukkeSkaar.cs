@@ -41,5 +41,6 @@ public class KrukkeSkaar : MonoBehaviour
     public int GetSortingOrder()
     {
         return spriteRenderer.sortingOrder;
+        
     }
 }
