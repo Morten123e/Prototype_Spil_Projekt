@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 9e78a2f7f915a544aa8db75e428a6825
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: fa795b1759fbfb54c9ef365686429914
   - enabled: 1
@@ -15,10 +18,22 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniTree.unity
     guid: 5a94d8dedc771fe469101102f4637dd2
   - enabled: 1
-    path: Assets/Scenes/LevelSelectScene1.unity
+    path: Assets/Scenes/LevelSelectLevel1.unity
     guid: 8009a8cf983e8404db31dea066e32056
   - enabled: 1
     path: Assets/Scenes/FixKrukkeSpil.unity
     guid: d7eac94e7f9c2924291f06867c8c6001
+  - enabled: 1
+    path: Assets/Scenes/Level1Complete.unity
+    guid: 3b70d9f782802b44285615a76880e182
+  - enabled: 1
+    path: Assets/Scenes/LevelSelectLevel2.unity
+    guid: f5c42b7e191294e409949e4645c510db
+  - enabled: 1
+    path: Assets/Scenes/LevelSelectLevel3.unity
+    guid: d01dd99b3196d2342ab9a723ab4408da
+  - enabled: 1
+    path: Assets/Scenes/Level2Complete.unity
+    guid: bcf6f4875fcb7dc4cb37357d35fbc69d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
