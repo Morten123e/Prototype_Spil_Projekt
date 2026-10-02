@@ -1,14 +1,9 @@
 using UnityEngine;
 
-// Sidder på hver brik, der skal kunne trækkes.
-// Kræver: SpriteRenderer, Collider2D, layer "Pieces".
-public class Piece : MonoBehaviour
+public class KrukkeSkaar : MonoBehaviour
 {
-    public ShapeType shape;
     public float pressedScale = 1.15f;
     public float scaleSpeed = 15f;
-
-    [HideInInspector] public Hole currentHole;
 
     private SpriteRenderer spriteRenderer;
     private Vector3 normalScale;
@@ -36,13 +31,6 @@ public class Piece : MonoBehaviour
 
         topSortingOrder++;
         spriteRenderer.sortingOrder = topSortingOrder;
-
-        // Frigiv slottet, hvis brikken sad i et
-        if (currentHole != null)
-        {
-            currentHole.isFilled = false;
-            currentHole = null;
-        }
     }
 
     public void Release()

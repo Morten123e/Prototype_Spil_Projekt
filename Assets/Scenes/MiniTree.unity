@@ -262,25 +262,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 836852829}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 0143aa0a929828e41a5b9c35d13df1f0, type: 3}
---- !u!1 &667396177 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 674594763330241506, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-  m_PrefabInstance: {fileID: 1794566530}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &667396182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667396177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc22918dd13ab045870645da23c2f9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingsButtonScale
-  growSize: 0.1
-  speed: 0.5
 --- !u!1 &836852826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 0143aa0a929828e41a5b9c35d13df1f0, type: 3}
@@ -733,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6755745450888550096, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966184344594117415, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_AnchorMax.x
@@ -745,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8325224051329146008, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9179436834274149863, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
       propertyPath: m_IsActive
@@ -755,10 +736,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 2637410382455324771, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 674594763330241506, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 667396182}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3222c0b38e5784ebfac57ebd97b531, type: 3}
 --- !u!1 &1807550235
 GameObject:
